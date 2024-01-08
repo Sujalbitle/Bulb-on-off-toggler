@@ -6,6 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <img src="bulbOff.png" alt="" id="bulb-img">
+
+    <button type="button"  onclick="bulbOn()">ON</button>
+
+    <button type="button" onclick="bulbOff()">OFF</button>
+
+    <script>
+        function bulbOn(){
+            const bulbElement=document.getElementById("bulb-img")
+            bulbElement.src="bulbOn.png"
+        }
+        function bulbOff(){
+            const bulbElement=document.getElementById("bulb-img")
+            bulbElement.src="bulbOff.png"
+        }
+
+
+    </script>
 </body>
 </html>
